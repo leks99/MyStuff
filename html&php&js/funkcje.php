@@ -55,4 +55,24 @@ function silnia($a) {
     return $wynik;
 }
 
+function zad1($a, $b) {
+    return $a % $b;
+}
+
+function zad2($x, $y) {
+    return (2*$x-0.5*$y)/4;
+}
+
+function zad3($x, $y) {
+    echo("iloczyn: ");
+    echo($x*$y);
+    echo("<br>suma: ");
+    echo($x+$y);
+    $m = 1;
+    if ($x-$y<0) {
+        $m = -1;
+    }
+    echo("<br>różnica: ");
+    echo(($x-$y)*$m);
+}
 ?>

@@ -26,8 +26,8 @@
 
 
     <body>
-        <?php
-        $height = 9;
+        <?php //choinka -------------------
+        /*$height = 10;
         $index = 1;
         $s = (int) ($height-1);
         echo("<pre>");
@@ -46,10 +46,21 @@
             echo(" ");
         }
         echo("|_|");
-        echo("</pre>");
+        echo("</pre>"); */
+        //------------------------------
         ?>
-        <h1 style="color:rgb(5, 18, 196);font-size:50px;">dzień dobry</h1> 
-        
+        <!--<h1 style="color:rgb(5, 18, 196);font-size:50px;">Wesołych świąt</h1> -->
+        <?php /*
+        $christmasdate = mktime(0,0,0,12,24,2021);
+        $date = time();
+        $zostalodni = round(($christmasdate-$date)/86400);
+        $zostalogodzin = round(($christmasdate-$date)/(86400*24));
+        $zostalominut = round(($christmasdate-$date)/(86400*24*60));
+        $zostalosekund = round(($christmasdate-$date)/(86400*24*60*60));
+        echo ($zostalodni."dni, ".$zostalogodzin."godzin, ".$zostalominut."minut, ".$zostalosekund."sekund, ");
+        echo ("<br>");*/
+        ?>
+
         <?php 
             //-------------------------licznik bazy
             //połączenie
@@ -296,6 +307,21 @@
         echo($x);
         fclose($plik);
 
+        //zadanie 1 
+        echo("<br>");
+        echo("---------------------------------zadanie 1 git hub----------------------------");
+        echo("<br>");
+        echo("reszta to: ".zad1(2,5));
+        //zadanie 2
+        echo("<br>");
+        echo("---------------------------------zadanie 2 git hub----------------------------");
+        echo("<br>");
+        echo("wynik to: ".zad2(2,5));
+        //zadanie 3
+        echo("<br>");
+        echo("---------------------------------zadanie 3 git hub----------------------------");
+        echo("<br>");
+        zad3(2,5);
 
         ?>
 
