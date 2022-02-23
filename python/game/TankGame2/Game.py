@@ -7,7 +7,7 @@ from BlankObject import *
 from Maps import *
 
 # ---------SETTINGS-----------
-WINDOW_W, WINDOW_H = 1900, 1000  # (default 1900 by 1000)
+WINDOW_W, WINDOW_H = 1000, 600  # (default 1900 by 1000)
 FPS = 60
 DEBUG = False
 # ----------------------------

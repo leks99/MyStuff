@@ -5,6 +5,7 @@ import random
 '''
 to do list:
 - make map
+- display hp n bullets
 - add bonuses on map
 - more players
 '''
@@ -15,16 +16,16 @@ BACKGROUND_COLOR = (51, 160, 51)
 FPS = 30 # can break game (default 60)
 STARTAMMO = 10
 STARTHP = 100
-PLAYERSPEED = 4
-BULLETSPEED = 5
-DEBUG = True
+PLAYERSPEED = 7
+BULLETSPEED = 8
+DEBUG = False
 # -----------------------------------------------------
 
 # map settings
-enemyXStart = 600
-enemyYStart = 400
-playerXStart = 400
-playerYStart = 400
+enemyXStart = WINDOW_W - 80
+enemyYStart = WINDOW_H - 80
+playerXStart = 20
+playerYStart = 20
 
 pygame.init()
 
@@ -287,10 +288,14 @@ class Maps:
         self.isFirstRun = isFirstRun
         if isFirstRun:
             self.boxList = []
-            self.box1 = pygame.Rect(200, 200, 50, 500)
+            self.box1 = pygame.Rect(90, 0, 50, 400)
             self.boxList.append(self.box1)
-            self.box2 = pygame.Rect(1400, 200, 50, 500)
+            self.box2 = pygame.Rect(1600, 500, 50, 500)
             self.boxList.append(self.box2)
+            self.box3 = pygame.Rect(90, 490, 50, 410)
+            self.boxList.append(self.box3)
+            self.box4 = pygame.Rect(140, 850, 500, 50)
+            self.boxList.append(self.box4)
             self.isFirstRun = False
 
         for box in self.boxList:
